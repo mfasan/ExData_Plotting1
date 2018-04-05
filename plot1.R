@@ -7,7 +7,7 @@ powerdataselect <- powerdata[powerdata$DateTime>="2007-02-01"&powerdata$DateTime
 hist(powerdataselect$Global_active_power,col="red",main="Global Active Power",xlab="Global Active Power (kilowatts)")
 
 ##save file
-dev.copy(png,'plot1.png')
+dev.copy(png,'plot1.png',width=480, height=480,units="px")
 dev.off()
 
 
